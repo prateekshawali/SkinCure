@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="indesxcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="aiscript.js" defer></script>
+    <title>SkinCure</title>
+  </head>
+  <body>
+
+
+    
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>SkinCure</title>
+  </head>
+  <body>
+    <!-- nav bar starts-->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-shadow sticky-top" 
+    style="background-color: #ffffff;" >
+      <div class="container-fluid">
+        <a class="navbar-brand navbar" style="font-size: 30px; font-weight: 500;" 
+        href="#">SkinCure.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <c>
+        <div class="collapse navbar-collapse nav" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link active mr-5" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active mr-5" href="#scan">DermaScan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  active mr-5" href="#bot">Dermabot</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link  active mr-5" href="#blogs">Articles</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link  active mr-5" href="#blogs">login</a>
+                </li> -->
+                  <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" 
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#aboutus">About Us</a></li>
+                      
+                      <li><a class="dropdown-item" href="#accordionExample">FAQs</a></li>
+                      <li><a class="dropdown-item" href="#cont">Contact Us</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-link"><a href="log1.html" style="color: black; text-decoration: none;">Login</a></li>
+              </ul>
+          </div>
+          
+          </c>
+      </div>
+    </nav>  
+    <!--nav bar ends-->
+    <div class="container-fluid land ">
+        <h1 class="tag fade-in" style="font-weight: 500;">Your skin's health </h1>
+        <h1 class="tag fade-in"style="font-weight: 500;">our technology's promise. </h1>
+        <h4 class="tagline fade-in" >Lets you search by Image </h4>
+        <!-- <h4 class="tagline fade-in">Rescue, Rehabilitate, Rehome.</h4> -->
+      </div>
+<hr>
+
+
+<!-- ml starts-->
+
+<div id="scan"><br><br><br><br>
+<center><h3 style="font-weight: 700;"> DermaScan</h3>
+  <p  style="font-size: 20px; color: grey;"> Upload your Image</p></center> 
+  
+  <br><br>
+ 
+    <div class="container ml" >
+        <!-- <img src="ml.jpg" alt=""> -->
+        <form id="upload-form">
+            <!-- <label for="file-input">Select an image:</label>
+            <input type="file" id="file-input" accept="image/*"><br><br> -->
+            <!-- <div class="input-group mb-3">
+              <input type="file" class="form-control" id="inputGroupFile02 file-input" accept="image/*">
+              <label class="input-group-text"  for="inputGroupFile02">Upload</label>
+            </div> -->
+
+            <div class="input-group">
+              <input type="file" class="form-control" id="inputGroupFile04 file-input"  accept="image/*"aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+              <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button>
+            </div>
+            <!-- <button type="button" onclick="predictDisease()">Predict</button> -->
+            <br><br>
+            <center><button type="button" onclick="predictDisease()" class="btn btn-danger">Predict</button></center>
+        </form>
+        <div id="prediction-result"></div>
+    </div>
+  </div>
+
+
+
+<div class="ai" id="bot"><br><br><br>
+  <h1><center>DermaBot</center></h1>
+  <img src="chatbot.jpg" id="chatimg">
+  <h3 class="tall">Talk with Me</h3><a href="chatbot.html">
+  <button type="button" class="btn btn-primary startai">start Conversation</button></a>
+</div>
+
+<br><br><br>
+    <hr>
+ <!-- Blogss part start -->
+
+     
+
+ 
+       
+       <div class="container " id="blogs" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <center><h3 style="font-weight: 700;"> ARTICLES ON SKIN DISEASES</h3>
+          <p  style="font-size: 20px; color: black;"> The Emotional Toll: Coping with Stigma in Skin Disease Patients</p></center> 
+          
+          <br><br><br>
+           <div class="row">
+             <div class="col">
+               <div class="card hover-animate"  style="width: 18rem;">
+                   <img src="skinart1.jpeg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title"  style="font-weight: 700;"> Global Burden of skin Disease </h5>
+                     <p class="card-text">The prevalence of skin diseases has increased over the last few decades and they contribute to a significant burden on the healthcare systems all across the world. This study aims to measure the burden of skin and subcutaneous diseases in terms of years lived with disability(YLDs) in individuals with skin diseases 
+
+                       
+                       </p>
+                     <a href=https://ijdvl.com/the-burden-of-skin-diseases-in-india-global-burden-of-disease-study-2017/ class="btn" style="background-color: #a2c0be; color: white;">Read More</a>
+                   </div>
+                 </div>
+             </div>
+             <div class="col order-1">
+               <div class="card hover-animate" style="width: 18rem;">
+                   <img src="skinart2.jpeg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title" style="font-weight: 700;"> Exploring Eczema</h5>
+                     <p class="card-text">Eczema, is chronic skin condition that causes inflamed, itchy, and red patches of skin. It can affect individuals of any age but is most common in children. The main symptoms of eczema include severe itching, especially at night, and red or brownish-gray patches found on the hands, eyelids, and the inside bend of elbows and knees.
+                       </p>
+                     <a href="https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2021.715839/full" class="btn" style="background-color: #a2c0be; color: white;" >Read More</a>
+                   </div>
+                 </div>
+             </div>
+             <div class="col order-5">
+               <div class="card hover-animate" style="width: 18rem;">
+                   <img src="skinart3.jpeg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title" style="font-weight: 700;">Insights into Psoriasis
+                       </h5>
+                     <p class="card-text">Psoriasis is an autoimmune condition that accelerates the growth cycle of skin cells, leading to the development of thick, scaly patches on the skin. It is a long-term, non-contagious condition that can significantly impact person's quality of life.The exact cause of psoriasis is not understood</p>
+                     <a href=https://my.clevelandclinic.org/health/diseases/6866-psoriasis" class="btn" style="background-color: #a2c0be; color: white;">Read More</a>
+                   </div>
+                 </div>
+             </div>
+             <div class="col order-5">
+               <div class="card hover-animate" style="width: 18rem;">
+                   <img src="skinart4.jpeg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title" style="font-weight: 700;">Understanding Rosacea</h5>
+                     <p class="card-text">Rosacea is a chronic skin condition that primarily affects the face, causing redness and visible blood vessels. It is more common in fair-skinned individuals and tends to affect women more than men.
+                       The exact cause of rosacea is unknown, but it is thought to involve a combination of genetic 
+
+                     
+                       </p>
+                     <a href=https://my.clevelandclinic.org/health/diseases/12174-rosacea class="btn" style="background-color: #a2c0be; color: white;">Read More</a>
+                   </div>
+                 </div>
+             </div>
+             
+           </div>
+         </div>
+ <!-- Blogss part end -->
+
+<hr>  
+
+    
+
+
+ 
+
+
+
+<br><br><br>
+
+<!-- faqs start -->
+
+
+  <h1 style="margin-left:30px;"><center
+  </cener>Frequently Asked Questions!</cener></h1><br><br>
+
+  <center>
+  
+    <div class="accordion" id="accordionExample" style="width:900px; font-size: 20px;">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How does SkinCure work?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body" style="text-align: justify;">
+            <strong>SkinCure uses advanced machine learning models to detect skin diseases based on the uploaded image </strong>
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           Is SkinCure accurate?
+  
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body" style="text-align: justify;">
+            <strong>Our models are constantly being updated and trained to improve accuracy
+            </strong>  
+    
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How can I talk to AI chatbot
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body" style="text-align: justify;">
+            <strong> Simply click on the 'Chat Now'button in the AI chatbot section </strong>
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How long does it take to get results?
+          </button>
+        </h2>
+        
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body" style="text-align: justify;">
+            <strong>The analysis typically takes a few seconds to a couple of minutes. You will receive the results on the screen immediately after the analysis is complete.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What should I do if the image upload fails?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body" style="text-align: justify;">
+            <strong> Ensure that the image is clear, well-lit, and within the file size limit. If problems persist, check your internet connection or try using a different device.</strong>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Is my personal information and image data safe?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body" style="text-align: justify;">
+            <strong> Yes, we prioritize your privacy and security. All uploaded images are encrypted and stored securely. We do not share your information with third parties without your consent.
+            </strong>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+<hr>    
+  
+  <br><br><br><br>
+  <hr><br><br>
+  <br /><br />
+<div id="cont">
+  <h1 style="margin-left: 30px">Contact Us!</h1>
+  <br /><br />
+  <p style="margin-left: 30px; width: 560px; text-align: justify">
+    Welcome to SkinCure, your reliable online tool for detecting potential skin diseases through advanced image analysis. Our mission is to provide you with a preliminary diagnosis and guide you towards appropriate medical care. If you have any questions, need technical support, or require further assistance, please reach out to us at
+  </p>
+  <br /><br /><br /><br /><br><br><br><br>
+  <div style="margin-left: 60%; margin-top: -30%"><center>
+    <a href="https://www.gmail.com"
+    ><img
+      src="gmail.png"
+      style="border-radius: 20px; width: 100px; padding: 20px"
+  /></a>
+    <a href="https://www.instagram.com/p/C5oefKBJzMx/?igsh=MWJoaTh4M2s1ZXFneg=="
+      ><img
+        src="instagram.jpeg"
+        style="border-radius: 20px; width: 100px; padding: 20px"
+    /></a>
+    <a href="https://www.facebook.com/animalbuzzsg/videos/basic-pet-care-dogs/401525285076037/""
+      ><img
+        src="facebook.png"
+        style="border-radius: 60px; width: 100px; padding: 20px"
+    /></a><br>
+    
+    <a href="https://youtu.be/n89YIMn8sjA"
+      ><img
+        src="youtube.png"
+        style="border-radius: 20px; width: 100px; padding: 20px"
+    /></a>
+    <a href="https://www.discord.com"
+    ><img
+      src="discord.jpg"
+      style="border-radius: 20px; width: 100px; padding: 20px"
+  /></a></center>
+  </div>
+</div>
+  <br /><br /><br /><br /><br />
+
+<br><br><br><br><br>
+  <h1 style="margin-left:30px;">For More Questions, Contact Us!</h1><br><br>
+  <a href="contactus.html"><button type="button" class="btn btn-outline-info">Click here!</button></a>
+  <br><br>
+  </center>
+<!-- faq ends -->
+
+
+
+
+<hr>
+
+      <!-- footer starts -->
+      <footer class="bg-dark text-white pt-5 pb-4 mx-auto foot">
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <h5>About us</h5>
+              <br>
+<p class="abt">
+  At SkinCure, we are dedicated to revolutionizing the way people approach skin health.
+   Our platform leverages cutting-edge image recognition technology to provide users 
+   with preliminary diagnoses of potential skin conditions, all from the comfort of their own homes.
+
+ 
+</p>
+            </div>
+            <div class="col">
+              <h5>Quick Links</h5><br>
+
+
+<pre class="abt">
+<!-- <a href="#aboutus" class="pay" style="color: #95ac97;">About Us</a> -->
+<a href="#scan" class="pay" style="color: #95ac97;">DermaScan</a>
+<a href="#bot" class="pay" style="color: #95ac97;">DermaBot</a>
+<a href="#success" class="pay" style="color: #95ac97;">Articles</a>
+<!-- <a href="#blogs" class="pay" style="color: #95ac97;">Blogs</a> -->
+
+</pre>
+          </div>
+            <div class="col">
+<h5>Follow us</h5><br>
+<ul class="social-icons">
+<li><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="https://twitter.com/login" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+<li><a href="https://www.linkedin.com/login" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>        
+
+</ul>
+</div>
+</div>     
+</div><br><br><br>
+
+        <br><br><br><br>
+        
+          <hr><center>
+          <p>All Rights Reserved &copy; 2024</p>
+          </center>
+        
+        
+
+      </footer>
+<!-- footer ends -->
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Function to check if an element is in the viewport
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+  var elements = document.querySelectorAll('.slide-in-left');
+  elements.forEach(function(element) {
+    if (isInViewport(element)) {
+      element.classList.add('visible');
+    }
+  });
+}
+
+// Add event listener for scroll
+window.addEventListener('scroll', handleScroll);
+
+// Initial check on page load
+handleScroll();
+
+
+
+
+        function predictDisease() {
+            const fileInput = document.getElementById('file-input');
+            const file = fileInput.files[0];
+            if (!file) {
+                alert('Please upload an image.');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('image', file);
+
+            fetch('/predict', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(result => {
+                document.getElementById('prediction-result').innerText = 'Prediction: ' + result.prediction;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    
+
+
+
+    </script>
+    
+  </body>
+</html>
